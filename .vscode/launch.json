@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Pulse",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/monitor.py",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "preLaunchTask": "Pulse: przygotuj środowisko",
+            "console": "integratedTerminal"
+        }
+    ]
+}

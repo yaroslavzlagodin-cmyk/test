@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "python.testing.unittestEnabled": true,
+    "python.testing.unittestArgs": ["-v", "-s", "tests", "-p", "test_*.py"],
+    "files.exclude": {
+        "**/__pycache__": true,
+        ".deps": true,
+        ".venv": true
+    }
+}

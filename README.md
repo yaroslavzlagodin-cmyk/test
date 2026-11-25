@@ -12,6 +12,12 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe monitor.py
 ```
 
+## VS Code Insiders
+
+W folderze projektu uruchom `code-insiders Pulse.code-workspace` lub wybierz w edytorze **File → Open Folder…** i wskaż folder projektu. Przy pierwszym otwarciu zainstaluj zalecane rozszerzenia **Python** i **Python Debugger**, jeśli ich brakuje.
+
+Naciśnij **F5**, aby uruchomić Pulse z debuggerem. Edytor najpierw przygotuje środowisko Python 3.12 w `.venv`. **Ctrl+F5** uruchamia aplikację bez debuggera. Testy znajdziesz w panelu **Testing**.
+
 ## Funkcje
 
 - **Przegląd.** Odczyty obciążenia procesora i wykorzystania pamięci RAM są odświeżane mniej więcej co dwie sekundy. Wykres przedstawia oba pomiary z ostatnich 60 sekund na wspólnej skali procentowej. Dla każdego dostępnego woluminu aplikacja podaje system plików, procent zajętego miejsca, ilość wolnego miejsca i całkowitą pojemność. W sekcji sieciowej znajdziesz lokalne adresy IPv4 aktywnych interfejsów.

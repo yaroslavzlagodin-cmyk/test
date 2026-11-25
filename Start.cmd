@@ -12,9 +12,10 @@ if not exist "%PYTHON%" (
 "%PYTHON%" -c "import customtkinter, matplotlib, psutil" >nul 2>&1 || (
     "%PYTHON%" -m pip install -r requirements.txt || goto :failed
 )
+if /i "%~1"=="--prepare" exit /b 0
 "%PYTHON%" monitor.py || goto :failed
 exit /b 0
 
 :failed
-pause
+if /i not "%~1"=="--prepare" pause
 exit /b 1

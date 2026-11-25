@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Pulse: przygotuj środowisko",
+            "type": "process",
+            "command": "cmd.exe",
+            "args": ["/d", "/c", "Start.cmd", "--prepare"],
+            "options": { "cwd": "${workspaceFolder}" },
+            "problemMatcher": []
+        }
+    ]
+}
